@@ -1,0 +1,22 @@
+# Sugumi — 1.58-bit Large Language Model
+# Core dependencies (install only when running on GPU/cloud — not required for code review)
+
+torch>=2.1.0
+transformers>=4.38.0
+tokenizers>=0.15.0
+safetensors>=0.4.0
+numpy>=1.24.0
+pyyaml>=6.0
+tqdm>=4.66.0
+
+# Chatbot API (optional — for deployment demo)
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+
+# Training monitoring (optional)
+# wandb>=0.16.0
+
+# Development / linting (optional)
+# pytest>=7.4.0
+# black>=24.0.0

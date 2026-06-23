@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sugumi-llm"
+version = "0.1.0"
+description = "Sugumi — 1.58-bit Large Language Model for memory-efficient AI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sugumi Project" }]
+keywords = ["llm", "1.58-bit", "bitnet", "quantization", "chatbot", "edge-ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.38.0",
+    "tokenizers>=0.15.0",
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.109.0", "uvicorn[standard]>=0.27.0", "pydantic>=2.5.0"]
+dev = ["pytest>=7.4.0", "black>=24.0.0"]
+
+[project.scripts]
+sugumi-chat = "sugumi.chatbot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sugumi*"]
