@@ -134,16 +134,8 @@ print(reply)
 
 ---
 
-## Architecture Highlights (Interview Talking Points)
 
-- **BitLinear158** — ternary weight quantization with Straight-Through Estimator (STE)
-- **GQA** (Grouped Query Attention) — fewer KV heads → faster inference, less KV-cache RAM
-- **RoPE** positional embeddings — better long-context generalization
-- **SwiGLU FFN** — modern feed-forward used in LLaMA/Mistral-class models
-- **8-bit activation quantization** — additional memory savings during training
-- **KV-cache** in `generate()` — O(1) per-token cost after prefill
 
-Full details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
