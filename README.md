@@ -150,7 +150,7 @@ If you reference this project:
   title  = {Sugumi: A 1.58-bit Large Language Model},
   author = {Sugumi Project},
   year   = {2024},
-  url    = {https://github.com/YOUR_USERNAME/sugumi-llm}
+  url    = {https://github.com/SandeepNandur/1.58bit-large-language-model}
 }
 ```
 
